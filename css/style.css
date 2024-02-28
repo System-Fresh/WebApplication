@@ -18,7 +18,7 @@ li{
 }
 
 #preloader{
-    background: #fff url(images/preloader1.gif) no-repeat center center;
+    background: #fff url(../images/preloader1.gif) no-repeat center center;
     position: fixed;
     background-size: 40%;
     height: 100vh;
