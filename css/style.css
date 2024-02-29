@@ -9,6 +9,11 @@
     text-decoration: none;
 } 
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #f4f4f4;
 }
@@ -16,7 +21,7 @@ body{
 li{
    list-style: none;
 }
-
+/* This style is for the website preloader */
 #preloader{
     background: #fff url(../images/preloader1.gif) no-repeat center center;
     position: fixed;
@@ -25,6 +30,35 @@ li{
     width: 100%;
     z-index: 1000;
   }
+/* This style is for the scroll to top  */
+  #progress{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 5;
+}
+
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+#progress-value img{
+    width: 30px;
+}
 
 
 header{
@@ -87,16 +121,18 @@ nav #icon{
 }
 
 main {
-    margin: 8.1rem 0rem;;
+    margin: 8.1rem 0rem;
+    color: #fff;
 }
 
 .tbody{
-    background: url(../images/variaty.jpg) no-repeat center center;
+    background: url(../images/desktop-background.jpg) no-repeat center center;
     position: relative;
     width: 100%;
     height: 100%;
     background-size: cover;
     padding: 0 3rem;
+    
  
 }
 
@@ -108,13 +144,26 @@ main {
     width: 100%;
     height: 100%;
     /* background-size: 100%; */
-    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 0.8 opacity */
+    /* background-color: rgba(0, 0, 0, 0.2); Black overlay with 0.8 opacity */
     z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.tbody .p1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.tbody .p1 span{
+    color: red;
+}
+
+.tbody .p2 span{
+    color: red;
 }
 
 
 /* Media QUery */
 @media (max-width: 909px){
+
 
     header{
         padding: 15px 30px;
@@ -185,5 +234,51 @@ main {
   border-radius: 5px; /* Adjust border radius as needed */
 }
 
+   .tbody{
+        display: none;
+    }
 
+    .tbody::after {
+        display: none;
+    }
+
+    .tbody-mob{
+    background: url(../images/mob.jpg) no-repeat center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 0 3rem;
+    display: block;
+    }
+    .tbody .p1{
+    font-size: 2.5rem;
+    text-align: center;
 }
+
+    .tbody .p2{
+        text-align: center;
+    }
+}
+
+ @media (max-width: 500px){
+
+    .tbody-mob{
+        display: none;
+    }
+
+    .tbody-small{
+    background: url(../images/mob2.jpg) no-repeat center center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 0 1.2rem;
+    display: block;
+    }
+
+      .tbody .p1{
+    font-size: 1.5rem;
+}
+
+ }
