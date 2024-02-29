@@ -158,3 +158,11 @@
 .login-register p a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 909px){
+    .wrapper{
+    width: 300px;
+    height: 440px;
+    
+}
+}
