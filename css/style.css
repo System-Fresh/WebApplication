@@ -57,7 +57,7 @@ li{
     color: #001a2e;
 }
 #progress-value img{
-    width: 30px;
+    width: 20px;
 }
 
 
@@ -165,10 +165,79 @@ main {
     color: red;
 }
 
+.tbody .p3{
+    padding-right: 50rem;
+    font-size: 1.4rem;
+    font-style:italic ;
+}
+.other-p{
+    padding-bottom: 2rem;
+}
+
+.menu-b{
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    background: none;
+    /* border: 1px solid crimson ; */
+    color: crimson;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 2;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+   
+}
+
+.menu-b.mb1:hover{
+    background-color: crimson;
+    color: #fff;
+    box-shadow: 0 0 5px crimson,
+                0 0 25px crimson,
+                0 0 50px crimson,
+                0 0 200px crimson;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.menu-b.mb2:hover{
+    background-color: #84c136;
+    color: #fff;
+    box-shadow: 0 0 5px #84c136,
+                0 0 25px #84c136,
+                0 0 50px #84c136,
+                0 0 200px #84c136;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.menu-b.mb2:hover{
+    background-color: #84c136;
+    color: #fff;
+    box-shadow: 0 0 5px #84c136,
+                0 0 25px #84c136,
+                0 0 50px #84c136,
+                0 0 200px #84c136;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.menu-b.mb3:hover{
+    background-color: #5f5d57;
+    color: #fff;
+    box-shadow: 0 0 5px #5f5d57,
+                0 0 25px #5f5d57,
+                0 0 50px #5f5d57,
+                0 0 200px #5f5d57;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+
 
 
 /* Media QUery */
 @media (max-width: 909px){
+
+     
+ 
+    
+  
 
 
     header{
@@ -269,6 +338,12 @@ main {
         text-align: center;
         
     }
+
+    .tbody .p3{
+    padding-right: 0rem;
+   
+}
+
 }
 
  @media (max-width: 500px){
