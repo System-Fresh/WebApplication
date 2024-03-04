@@ -26,7 +26,7 @@ let calcScrollValue = () => {
   let pos = document.documentElement.scrollTop;
   let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scrollValue = Math.round((pos * 100) / calcHeight);
-  console.log(scrollValue);
+  // console.log(scrollValue);
 
   if (pos > 100){
     scrollProgress.style.display = "grid";
