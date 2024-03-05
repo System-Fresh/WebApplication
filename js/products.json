@@ -3,7 +3,7 @@
         "id": 1,
         "name":" Arayes",
         "price": 200,
-        "image": "../images/arab-arayes.png"
+        "image": "images/arab-arayes.png"
     },
     {
         "id": 2,
