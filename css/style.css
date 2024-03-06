@@ -233,6 +233,112 @@ main {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
+/* shop container */
+
+
+/* 
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(50% - 10px); 
+  }
+}  */
+
+ .shop-container{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+    color: #000;
+}
+
+.row-btn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#filter-buttons button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#filter-buttons button.active{
+    background: #4070f4;
+}
+
+.fit-row{
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#filterable-cards .fit-card{
+    flex-grow: 1;
+    flex-basis: 250px;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.05);
+}
+#filterable-cards .fit-card.hide{
+    display: none;
+}
+.fit-card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body{
+    padding: 15px 20px 20px;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.card-text{
+    font-size: 18px;
+    color: #333;
+} 
+/* shop container */
+
+
 footer{
     width: 100%;
     position: absolute;
@@ -373,9 +479,22 @@ footer .underline span{
 
 
 /* Media QUery */
+@media (max-width: 1350px) {
+    .tbody .p3{
+        padding-right: 35rem;
+    }
+}
 @media (max-width: 1100px){
        .tbody .p3{
-    padding-right: 0rem;
+    padding-right: 5rem;
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.8rem;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    color: #000;
    
 }
 }
@@ -414,7 +533,14 @@ footer .underline span{
         flex-direction: column; 
         margin: 30px 0;
         line-height: 30px;
+        
     }
+
+    .navigation a{
+    color: #fff;
+    /* border: 1px solid rosybrown; */
+    
+}
 
 
       .hidden {
@@ -478,6 +604,9 @@ main {
     .tbody .p2{
         text-align: center;
         
+    }
+    .tbody .p3{
+        padding-right: 0rem;
     }
 
 

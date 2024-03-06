@@ -22,6 +22,10 @@ section{
 }
 .icon-cart{
     position: relative;
+    margin-right: 1rem;
+}
+.icon-cart:hover{
+    cursor: pointer;
 }
 .icon-cart span{
     position: absolute;
@@ -72,11 +76,17 @@ section{
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
+  
+}
+
+.listProduct .item button:hover{
+    cursor: pointer;
+    background-color: rosybrown;
 }
 
 /* cart */
 .cartTab{
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 400px;
     background-color: #353432;
     color: #eee;
@@ -95,8 +105,8 @@ body.showCart .container{
     transform: translateX(-250px);
 }
 .cartTab h1{
-    padding: 20px;
-    margin: 0;
+    padding: 10px;
+    margin-left: 1.89rem;
     font-weight: 300;
 }
 .cartTab .btn{
@@ -158,5 +168,10 @@ body.showCart .container{
 @media only screen and (max-width: 768px) {
     .listProduct{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 358px) {
+    .listProduct{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
