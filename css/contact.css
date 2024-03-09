@@ -103,8 +103,9 @@
 
 
 .contactUs .inputBox input[type="submit"]{
-    background: #18b7ff;
-    color: #000;
+    /* background: #18b7ff; */
+    background: crimson;
+    color: #fff;
     border: none;
     font-size: 1.1em;
     max-width: 120px;

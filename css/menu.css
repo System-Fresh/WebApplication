@@ -168,7 +168,8 @@
 }
 
 #filter-buttons button.activeB{
-    background: #4070f4;
+    background: crimson;
+    color: #fff;
 }
 
 .fit-row{
