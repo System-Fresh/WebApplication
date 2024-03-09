@@ -129,214 +129,204 @@ main {
     color: #fff;
 }
 
-.tbody{
-    background: url(../images/test7.jpg) no-repeat center center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    padding: 0 3rem;
-    
-    
- 
+
+
+
+/* slider  */
+
+
+.slider{
+	position: relative;
+	width: 100%;
+	background: #2c3e50; /* darckblue */
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
 }
 
-.tbody::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-size: 100%; */
-    /* background-color: rgba(0, 0, 0, 0.2); Black overlay with 0.8 opacity */
-    z-index: 1; /* Ensure the overlay is above the background image */
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #00a7ff; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #00a7ff; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.tbody .p1{
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 2rem 0;
-}
-.tbody .p2{
-    margin: 1.2rem 0;
-    font-size: 2.2rem;
-}
-.tbody .p1 span{
-    color: red;
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
 }
 
-.tbody .p2 span{
-    color: red;
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
 }
 
-.tbody .p3{
-    padding-right: 50rem;
-    font-size: 1.4rem;
-    font-style:italic ;
-}
-.other-p{
-    padding-bottom: 2rem;
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
 }
 
-.menu-b{
-    font-size: 1.8rem;
-    padding: 0.4rem;
-    background: mistyrose;
-    /* border: 1px solid crimson ; */
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h3{
+    font-size: 30px;
     color: crimson;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-    z-index: 2;
-    position: relative;
-    transition: 0.5s;
-    overflow: hidden;
-   
 }
 
-.menu-b.mb1:hover{
-    background-color: crimson;
-    color: #fff;
-    box-shadow: 0 0 5px crimson,
-                0 0 25px crimson,
-                0 0 50px crimson,
-                0 0 200px crimson;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+.txt h1{
+	color: crimson; /*blue*/
+	font-size: 50px;
+	margin-bottom: 20px;
+    
 }
-.menu-b.mb2:hover{
-    background-color: #84c136;
-    color: #fff;
-    box-shadow: 0 0 5px #84c136,
-                0 0 25px #84c136,
-                0 0 50px #84c136,
-                0 0 200px #84c136;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 4 */
+.slider img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
 }
 
-.menu-b.mb2:hover{
-    background-color: #84c136;
-    color: #fff;
-    box-shadow: 0 0 5px #84c136,
-                0 0 25px #84c136,
-                0 0 50px #84c136,
-                0 0 200px #84c136;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
-.menu-b.mb3:hover{
-    background-color: #5f5d57;
-    color: #fff;
-    box-shadow: 0 0 5px #5f5d57,
-                0 0 25px #5f5d57,
-                0 0 50px #5f5d57,
-                0 0 200px #5f5d57;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
 
-/* shop container */
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
 
 
-/* 
-#filter-buttons button {
-  border-radius: 3px;
-  background: #fff;
-  border-color: transparent;
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
 }
 
-#filter-buttons button:hover {
-  background: #ddd;
-}
+/* slide mob */
+/* slide tablet */
 
-#filter-buttons button.active {
-  color: #fff;
-  background: #6c757d;
-}
-
-#filterable-cards .card {
-  width: 15rem;
-  border: 2px solid transparent;
-}
-
-#filterable-cards .card.hide {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  #filterable-cards {
-    justify-content: center;
-  }
-
-  #filterable-cards .card {
-    width: calc(50% - 10px); 
-  }
-}  */
-
- .shop-container{
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    margin: 50px auto;
-    color: #000;
-}
-
-.row-btn{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-#filter-buttons button{
-    padding: 10px 20px;
-    font-size: 18px;
-    background: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-#filter-buttons button.active{
-    background: #4070f4;
-}
-
-.fit-row{
-    display: flex;
-    margin-top: 25px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-#filterable-cards .fit-card{
-    /* flex-grow: 1; */
-    flex-basis: 250px;
-    background-color: #fff;
-    padding: 3px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0, 0, 0.05);
-}
-#filterable-cards .fit-card.hide{
-    display: none;
-}
-.fit-card img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-}
-
-.card-body{
-    padding: 15px 20px 20px;
-}
-.card-title{
-    font-size: 20px;
-    font-weight: 500;
-    color: #333;
-}
-.card-text{
-    font-size: 18px;
-    color: #333;
-} 
-/* shop container */
+/* slider  */
 
 
 footer{
@@ -479,25 +469,8 @@ footer .underline span{
 
 
 /* Media QUery */
-@media (max-width: 1350px) {
-    .tbody .p3{
-        padding-right: 35rem;
-    }
-}
-@media (max-width: 1100px){
-       .tbody .p3{
-    padding-right: 5rem;
-    padding: 0.4rem 0.4rem;
-    border-radius: 0.8rem;
-    background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.3)
-    );
-    color: #000;
-   
-}
-}
+
+
 @media (max-width: 909px){
 
     header{
@@ -640,23 +613,6 @@ footer .col:nth-child(2), footer .col:nth-child(3){
 
     main {
     margin: 6.5rem 0rem;
-}
-    .tbody-mob{
-        display: none;
-    }
-
-    .tbody-small{
-    background: url(../images/mob2.jpg) no-repeat center center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    padding: 0 1.2rem;
-    display: block;
-    }
-
-      .tbody .p1{
-    font-size: 1.5rem;
 }
 
 
