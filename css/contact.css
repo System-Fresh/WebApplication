@@ -217,4 +217,23 @@
 }
 }
 
+@media (max-width: 350px){
+    .contactUs{
+        padding: 5px 12.5px;
+    }
+
+     .contactUs .contact{
+        padding: 10px;
+    }
+
+       .contactUs .map{
+    padding: 0;
+}
+
+.contactUs iframe{
+    width: 100%;
+    height: 100%;
+}
+}
+
 

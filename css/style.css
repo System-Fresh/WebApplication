@@ -598,6 +598,12 @@ footer .col:nth-child(2), footer .col:nth-child(3){
     flex-basis: 15%;
 }
 
+
+footer .copyright{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 }
 
  @media (max-width: 500px){

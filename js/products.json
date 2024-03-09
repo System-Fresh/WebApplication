@@ -2,163 +2,163 @@
     {
         "id": 1,
         "name":" Arayes",
-        "price": 200,
+        "price": 8,
         "image": "images/arab-arayes.png"
     },
     {
         "id": 2,
         "name":" Chicken Kabasa",
-        "price": 250,
+        "price": 10,
         "image": "images/arab-chicken-kabasa.png"
     },
     {
         "id": 3,
         "name":" Chicken Shawarma",
-        "price": 290,
+        "price": 12,
         "image": "images/arab-chicken-shawarma.png"
     },
     {
         "id": 4,
         "name":" Falafel",
-        "price": 200,
+        "price": 5,
         "image": "images/arab-falafel.png"
     },
     {
         "id": 5,
         "name":"Char Siu",
-        "price": 300,
+        "price": 6,
         "image": "images/chi-char-siu.png"
     },
     {
         "id": 6,
         "name":" Dim-Sum",
-        "price": 200,
+        "price": 7,
         "image": "images/chi-dim-sum.png"
     },
     {
         "id": 7,
         "name":" Dumplings",
-        "price": 200,
+        "price": 12,
         "image": "images/chi-dumplings.png"
     },
     {
         "id": 8,
         "name":" Roast Duck",
-        "price": 200,
+        "price": 10,
         "image": "images/chi-roast-duck-3.png"
     },
     {
         "id": 9,
         "name":" Bangers Mash",
-        "price": 200,
+        "price": 13,
         "image": "images/eng-bangers-mash.png"
     },
     {
         "id": 10,
         "name":"Chicken Tikka-masala",
-        "price": 200,
+        "price": 13,
         "image": "images/eng-chicken-tikka-masala.png"
     },
     {
         "id": 11,
         "name":"Fish and Fish",
-        "price": 200,
+        "price": 15,
         "image": "images/eng-fish-chips.png"
     },
     {
         "id": 12,
         "name":"Sheperd Pie",
-        "price": 200,
+        "price": 20,
         "image": "images/eng-shepherds-pie.png"
     },
     {
         "id": 13,
         "name":"Aloo Gobi ",
-        "price": 200,
+        "price": 17,
         "image": "images/ind-aloo-gobi.png"
     },
     {
         "id": 14,
         "name":"Biriyani",
-        "price": 200,
+        "price": 7,
         "image": "images/ind-biriyani.png"
     },
     {
         "id": 15,
         "name":"Chicken Vindaloo",
-        "price": 200,
+        "price": 15,
         "image": "images/ind-Chicken-Vindaloo.png"
     },
     {
         "id": 16,
         "name":"Malabar Fish Curry",
-        "price": 200,
+        "price": 13,
         "image": "images/ind-Malabar-Fish-Curry.png"
     },
     {
         "id": 17,
         "name":"Miso Soup",
-        "price": 200,
+        "price": 12,
         "image": "images/jap-miso-soup.png"
     },
     {
         "id": 18,
         "name":"Okonomiyaki",
-        "price": 200,
+        "price": 6,
         "image": "images/jap-okonomiyaki.png"
     },
     {
         "id": 19,
         "name":"Sushi",
-        "price": 200,
+        "price": 9,
         "image": "images/jap-sushi.png"
     },
     {
         "id": 20,
         "name":"Yakitori",
-        "price": 200,
+        "price": 19,
         "image": "images/jap-Yakitori.png"
     },
     {
         "id": 21,
         "name":"Kung Pao Chicken",
-        "price": 200,
+        "price": 7,
         "image": "images/kung-pao-chicken.png"
     },
     {
         "id": 22,
         "name":"Abacha",
-        "price": 200,
+        "price": 24,
         "image": "images/nig-abacha.png"
     },
     {
         "id": 23,
         "name":"Egusi Soup",
-        "price": 200,
+        "price": 10,
         "image": "images/nig-Egusi.png"
     },
     {
         "id": 24,
         "name":"Ewedu Soup",
-        "price": 200,
+        "price": 10,
         "image": "images/nig-ewedu.png"
     },
     {
         "id": 25,
         "name":"Kung Pao Chicken",
-        "price": 200,
+        "price": 20,
         "image": "images/kung-pao-chicken.png"
     },
     {
         "id": 26,
         "name":"Jollof",
-        "price": 200,
+        "price": 12,
         "image": "images/nig-jollof.png"
     },
     {
         "id": 27,
         "name":"Nsala Soup",
-        "price": 200,
+        "price": 10,
         "image": "images/nig-nsala.png"
     }
     
