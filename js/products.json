@@ -160,6 +160,37 @@
         "name":"Nsala Soup",
         "price": 10,
         "image": "images/nig-nsala.png"
+    },
+    {
+        "id": 28,
+        "name":"Hotdog",
+        "price": 4,
+        "image": "images/ame-hdog.png"
+    },
+    {
+        "id": 29,
+        "name":"Chicken Tenders",
+        "price": 10,
+        "image": "images/ame-chit.png"
+    },
+    {
+        "id": 30,
+        "name":"Arizona Cheese Crisp",
+        "price": 12,
+        "image": "images/ame-arizona.png"
+    },
+    {
+        "id": 31,
+        "name":"American Chop Suey",
+        "price": 15,
+        "image": "images/ame-chops.png"
+    },
+    
+    {
+        "id": 32,
+        "name":"French Fries",
+        "price": 15,
+        "image": "images/ame-ffry.png"
     }
     
 
