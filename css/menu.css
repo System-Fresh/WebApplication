@@ -106,40 +106,7 @@
 /* shop container */
 
 
-/* 
-#filter-buttons button {
-  border-radius: 3px;
-  background: #fff;
-  border-color: transparent;
-}
 
-#filter-buttons button:hover {
-  background: #ddd;
-}
-
-#filter-buttons button.active {
-  color: #fff;
-  background: #6c757d;
-}
-
-#filterable-cards .card {
-  width: 15rem;
-  border: 2px solid transparent;
-}
-
-#filterable-cards .card.hide {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  #filterable-cards {
-    justify-content: center;
-  }
-
-  #filterable-cards .card {
-    width: calc(50% - 10px); 
-  }
-}  */
 
  .shop-container{
     position: relative;
@@ -209,6 +176,11 @@
     border: 1px solid #000;
     text-align: center;
     margin-bottom: 25px;
+}
+.card-title:hover{
+    color: #fff;
+    background: crimson;
+    border: none;
 }
 .card-text{
     font-size: 18px;
