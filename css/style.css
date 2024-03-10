@@ -323,17 +323,16 @@ main {
 	}
 }
 
-/* slide mob */
-/* slide tablet */
+
 
 /* slider  */
 
-
+/* css style for the footer section */
 footer{
     width: 100%;
     position: absolute;
-    /* bottom: 0; */
-    background: linear-gradient(45deg, rgba(220, 20, 60, 0.7), rgba(139, 0, 0, 0.7));
+    background: #2f3640;
+    /* background: #b2beb5; */
     color: #fff;
     padding: 30px 0 30px;
     border-top-left-radius: 125px;
